@@ -18,6 +18,12 @@
       "@typescript-eslint"
   ],
   "rules": {
+    "lines-between-class-members": "off",
+    "import/extensions": "off",
+    "import/no-useless-path-segments": "off",
+    "import/prefer-default-export": "off",
+    "no-shadow": "off",
+    "import/named": "off",
     "import/no-unresolved": "off",
     "import/no-extraneous-dependencies": "off",
     "import/no-duplicates": "off",
@@ -30,13 +36,6 @@
     "no-console": "off",
     "@typescript-eslint/no-use-before-define": [
       "error"
-    ],
-     "import/extensions": [
-      "error",
-      "ignorePackages",
-      {
-        "ts": "never"
-      }
     ],
     "prettier/prettier": "error"
   },
