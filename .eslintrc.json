@@ -18,6 +18,7 @@
       "@typescript-eslint"
   ],
   "rules": {
+    "class-methods-use-this": "off",
     "lines-between-class-members": "off",
     "import/extensions": "off",
     "import/no-useless-path-segments": "off",
@@ -34,6 +35,17 @@
     "import/no-named-as-default": "off",
     "import/no-named-as-default-member": "off",
     "no-console": "off",
+    "@typescript-eslint/naming-convention": [
+      "error",
+      {
+        "selector": "interface",
+        "format": ["PascalCase"],
+        "custom": {
+          "regex": "^I[A-Z]",
+          "match": true
+        }
+      }
+    ],
     "@typescript-eslint/no-use-before-define": [
       "error"
     ],
